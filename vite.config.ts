@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://sendgrid-email-151973740601.europe-west1.run.app',
+        target: 'https://enviar-mail.azurewebsites.net/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
