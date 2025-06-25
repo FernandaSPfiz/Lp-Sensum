@@ -41,7 +41,7 @@ export default function Home() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer XX1JCu4PU97lvn6nrz7yPzqEq5AIawNvL__uwibSGZ2gAzFusxU3KA==",
+          Authorization: "Bearer ",
         },
         body: JSON.stringify({
           to_email: email,
