@@ -1,0 +1,50 @@
+#solution header {
+  padding: 4rem 0;
+}
+
+#solution h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#solution h3 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#solution h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary-color);
+  margin: 1rem auto;
+}
+
+.solution-item {
+  background: var(--light-gray);
+  border: 1px solid #e4e4e4 !important;
+  transition: transform 0.3s ease;
+}
+
+.solution-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.solution-item h4 {
+  color: var(--text-color);
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 768px) {
+  #solution .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #solution h2 {
+    font-size: 2rem;
+  }
+}

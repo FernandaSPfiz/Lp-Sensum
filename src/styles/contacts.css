@@ -1,0 +1,76 @@
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 2rem;
+}
+
+#contacts header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+
+    :first-child {
+        color: #a3a3a3;
+        font-weight: var(--fw-bold);
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 700px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 700px;
+        text-align: center;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        color: var(--text-color);
+        padding: 0 1rem;
+    }
+}
+
+#contacts .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0 auto;
+
+    input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+
+        &:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+Button {
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
